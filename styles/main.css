@@ -1,0 +1,132 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/bodyfont.ttf);
+}
+body {
+    font-family: myFirstFont, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ed0200;
+	background-image: url("images/BG1.jpg");
+    color: #fff;
+}
+.donation-form {
+	padding: 10px 20px; 
+	background-color: #333;
+	display: grid;
+    color: #fff;
+	gap: 5px;
+    grid-template-columns: 1fr 2fr; /* Adjust column widths as needed */
+}
+
+.donation-form label {
+    font-weight: bold;
+}
+
+.donation-form input {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.logo {
+    font-family: myFirstFont, sans-serif ;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo-text {
+    font-family: myFirstFont, sans-serif ;
+    font-weight: 1000;
+
+
+}
+
+.logo-image {
+    max-width: 100px; /* Adjust size as needed */
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* Align links to the right */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li:first-child {
+    margin-left: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.section {
+    padding: 80px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.footcontainer {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+	
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.section {
+    padding: 80px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    position: relative; /* Ensure relative positioning for absolute elements */
+}
+li a:hover {
+	background-color: #013991;
+	border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .section {
+        padding: 60px 20px;
+    }
+	li a:hover {
+	background-color: #013991;
+	border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+}
+

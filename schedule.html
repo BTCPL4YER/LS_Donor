@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="webmanifest/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="styles/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/site/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Schedule a Donation - Life Stream Donors.">
+    <meta charset="UTF-8">
+    <title>Schedule a Donation | Life Stream Donors</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Life Stream Donors">
+    <meta property="og:title" content="Schedule a Donation | Life Stream Donors">
+    <meta property="og:description" content="Schedule a Donation - Life Stream Donors.">
+    <meta property="og:image" content="images/logo.png">
+    <meta name="twitter:card" content="summary">
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-wrap">
+            <div class="nav-left">
+                <div class="brand">
+                    <img src="images/logo.png" alt="Life Stream Donors logo" class="logo-image" width="56" height="56">
+                    <span class="logo-text">Life Stream Donors</span>
+                </div>
+            </div>
+
+            <nav class="nav" id="primaryNav">
+                <button class="nav-close" id="navClose" type="button" aria-label="Close navigation">&times;</button>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+
+                <div class="nav-item dropdown" data-dropdown>
+                    <button class="dropdown-toggle" type="button">
+                        Donate <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="mega-menu">
+                        <div class="container mega-grid">
+                            <div class="mega-section">
+                                <button class="mega-accordion" type="button">
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                    Donor Actions
+                                </button>
+                                <div class="mega-content">
+                                    <a href="donor.html"><i class="fa-solid fa-user-plus"></i> Become Donor</a>
+                                    <a href="schedule.html"><i class="fa-solid fa-calendar-check"></i> Schedule</a>
+                                    <a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+                                </div>
+                            </div>
+                            <div class="mega-section">
+                                <button class="mega-accordion" type="button">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    Learn
+                                </button>
+                                <div class="mega-content">
+                                    <a href="blood-types.html"><i class="fa-solid fa-droplet"></i> Blood Types</a>
+                                    <a href="process.html"><i class="fa-solid fa-stethoscope"></i> Process</a>
+                                    <a href="benefits.html"><i class="fa-solid fa-heart"></i> Benefits</a>
+                                </div>
+                            </div>
+                            <div class="mega-section">
+                                <button class="mega-accordion" type="button">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                    Support
+                                </button>
+                                <div class="mega-content">
+                                    <a href="faq.html"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+                                    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+                                    <a href="help.html"><i class="fa-solid fa-headset"></i> Help</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="index.html#request" class="nav-link">Request</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+                    ☰
+                </button>
+                <button class="nav-cta" id="emergencyButton" type="button">
+                    <i class="fa-solid fa-bolt"></i>
+                    Emergency Request
+                </button>
+            </div>
+        </div>
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Schedule a Donation</h1>
+                <p>Book your next donation and keep your history up to date.</p>
+            </div>
+        </section>
+        <section class="page-content">
+            <div class="container">
+                <div class="card form">
+                    <h2>Donation Schedule</h2>
+                    <p class="form-note">Add a donation date and location. We will save it to your history.</p>
+                    <form id="scheduleForm">
+                        <div class="field">
+                            <label for="scheduleDate">Date</label>
+                            <input id="scheduleDate" name="scheduleDate" type="date" required>
+                        </div>
+                        <div class="field">
+                            <label for="scheduleTime">Time</label>
+                            <input id="scheduleTime" name="scheduleTime" type="time" required>
+                        </div>
+                        <div class="field">
+                            <label for="scheduleLocation">Location</label>
+                            <input id="scheduleLocation" name="scheduleLocation" type="text" placeholder="Clinic or hospital" required>
+                        </div>
+                        <button class="btn primary" type="submit">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Save Schedule
+                        </button>
+                    </form>
+                    <p id="scheduleMessage" class="form-message"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer class="footer">
+        <div class="container footcontainer">
+            <div class="socials" aria-label="Social links">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-square-whatsapp" aria-hidden="true"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Life Stream Donors. All rights reserved.</p>
+            <small class="watermark">Malko Labs</small>
+        </div>
+    </footer>
+
+    <script src="scripts/site/main.js" defer></script>
+</body>
+</html>

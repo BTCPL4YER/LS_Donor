@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeStream Donors</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+	<link rel="manifest" href="webmanifest/site.webmanifest">
+	<link rel="stylesheet" type="text/css" href="styles/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/donate.css">
+	<link rel="stylesheet" href="styles/transistion.css">
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">LifeStream Donors</h1>
+			<a href="index.html"><img src="images/logo.png" alt="Logo" class="logo-image" width="70" height="70"></a>
+    </header>
+    <section id="guide" class="info">
+		<details class="guide">
+		<summary>Why do we need your info?</summary>
+
+			<p>We ask for your information to ensure a smooth and safe donation process. Your details help us:</p>
+
+			<ol>
+				<li>Verify Eligibility: We need to confirm your eligibility to donate blood based on health and donation history.</li>
+
+				<li>Schedule Appointments: Your information allows us to schedule donation appointments that fit your availability and our operational needs.</li>
+
+				<li>Contact and Communication: It enables us to communicate important details about your donation, such as health screenings, donation guidelines, and post-donation care.</li>
+
+				<li>Ensure Donor Safety: Understanding your health history helps us ensure the safety of both donors and recipients of blood donations.</li>
+
+				<li>Maintain Records: We maintain accurate records of donations and donor information to comply with regulatory requirements and for future donation purposes.</li>
+			</ol>
+			<p>Your information is confidential and used solely for donation-related purposes, ensuring a positive experience for you and the recipients who benefit from your generous donation.</p>
+		</details>
+	</section>
+    <section id="donate" class="section">
+        <div class="container">
+            <!--<h2>Donate Blood</h2>
+            <p>Find out where you can donate and how you can make a difference.</p>-->
+            
+            <div class="register-container">
+				
+				<form action="#" method="POST" class="donation-form">
+					<label for="name">First Name:</label>
+					<input type="text" id="fname" name="fname" required>
+					<label for="name">Last Name:</label>
+					<input type="text" id="lname" name="lname" required>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" value="+221" maxlength="13" required>
+
+					<label for="blood-type">Blood Type:</label>
+					<select id="blood-type" name="blood-type" required>
+						<option value="A+">A+</option>
+						<option value="A-">A-</option>
+						<option value="B+">B+</option>
+						<option value="B-">B-</option>
+						<option value="O+">O+</option>
+						<option value="O-">O-</option>
+						<option value="AB+">AB+</option>
+						<option value="AB-">AB-</option>
+					</select>
+
+					<button type="submit">Register</button>
+				</form>
+				<p id="message"></p>
+			</div>
+        </div>
+    </section>
+<script src="scripts/main.js"></script>
+    <script src="scripts/messages.js"></script>
+</body>
+</html>

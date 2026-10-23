@@ -1,0 +1,164 @@
+/* Global styles */
+body {
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease; /* Example of background color transition */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+}
+
+/* Header */
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Example of header background color and text color transition */
+}
+
+header .logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Example of link color transition */
+}
+
+header a:hover {
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Example of footer background color and text color transition */
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Example of link color transition */
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+/* Section styles */
+.section {
+    padding: 20px 0;
+}
+
+/* Details and guide */
+.info {
+    margin-bottom: 20px;
+}
+
+.info .guide {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Example of box-shadow transition */
+}
+.info .guide:active {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.info .guide:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.info .guide summary {
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Example of summary text color transition */
+}
+
+.info .guide summary:hover {
+    color: #007bff;
+}
+
+/* Form and register container */
+.register-container {
+    background-color: transition; /* Maintain existing background color */
+	backdrop-filter: blur;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease; /* Example of container box-shadow and transform transition */
+}
+
+.register-container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.register-container label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.register-container input[type=text],
+.register-container input[type=email],
+.register-container input[type=tel],
+.register-container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Example of input and select box-shadow and border-color transition */
+}
+
+.register-container input[type=text]:focus,
+.register-container input[type=email]:focus,
+.register-container input[type=tel]:focus,
+.register-container select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.register-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Example of button background color and transform transition */
+}
+
+.register-container button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Example of button scale on hover */
+}
+
+.register-container button:active {
+    transform: scale(0.95); /* Example of button scale on active state */
+    box-shadow: none; /* Remove box shadow on active state */
+}
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .register-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    header .logo {
+        font-size: 20px; /* Adjust font size for smaller screens */
+   

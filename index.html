@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="webmanifest/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="styles/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/site/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life Stream Donors connects blood donors with people who need blood urgently.">
+    <meta name="keywords" content="Blood donors, donate blood, emergency blood request">
+    <meta charset="UTF-8">
+    <title>Life Stream Donors</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Life Stream Donors">
+    <meta property="og:title" content="Life Stream Donors">
+    <meta property="og:description" content="Life Stream Donors connects blood donors with people who need blood urgently.">
+    <meta property="og:image" content="images/logo.png">
+    <meta name="twitter:card" content="summary">
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-wrap">
+            <div class="nav-left">
+                <div class="brand">
+                    <img src="images/logo.png" alt="Life Stream Donors logo" class="logo-image" width="56" height="56">
+                    <span class="logo-text">Life Stream Donors</span>
+                </div>
+            </div>
+
+            <nav class="nav" id="primaryNav">
+                <button class="nav-close" id="navClose" type="button" aria-label="Close navigation">&times;</button>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+
+                <div class="nav-item dropdown" data-dropdown>
+                    <button class="dropdown-toggle" type="button">
+                        Donate <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="mega-menu">
+                        <div class="container mega-grid">
+                            <div class="mega-section">
+                                <button class="mega-accordion" type="button">
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                    Donor Actions
+                                </button>
+                                <div class="mega-content">
+                                    <a href="donor.html"><i class="fa-solid fa-user-plus"></i> Become Donor</a>
+                                    <a href="schedule.html"><i class="fa-solid fa-calendar-check"></i> Schedule</a>
+                                    <a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i> History</a>
+                                </div>
+                            </div>
+                            <div class="mega-section">
+                                <button class="mega-accordion" type="button">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    Learn
+                                </button>
+                                <div class="mega-content">
+                                    <a href="blood-types.html"><i class="fa-solid fa-droplet"></i> Blood Types</a>
+                                    <a href="process.html"><i class="fa-solid fa-stethoscope"></i> Process</a>
+                                    <a href="benefits.html"><i class="fa-solid fa-heart"></i> Benefits</a>
+                                </div>
+                            </div>
+                            <div class="mega-section">
+                                <button class="mega-accordion" type="button">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                    Support
+                                </button>
+                                <div class="mega-content">
+                                    <a href="faq.html"><i class="fa-solid fa-circle-question"></i> FAQ</a>
+                                    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+                                    <a href="help.html"><i class="fa-solid fa-headset"></i> Help</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="index.html#request" class="nav-link">Request</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+                    ☰
+                </button>
+                <button class="nav-cta" id="emergencyButton" type="button">
+                    <i class="fa-solid fa-bolt"></i>
+                    Emergency Request
+                </button>
+            </div>
+        </div>
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Donate. Connect. Save lives.</p>
+                    <h1>Save Lives by Donating Blood</h1>
+                    <p class="subhead">
+                        Life Stream Donors connects generous donors with patients who need blood fast.
+                        Every donation can be the reason someone gets a second chance.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#donate">Become a Donor</a>
+                        <a class="btn ghost" href="#request">Request Blood</a>
+                    </div>
+                    <div class="hero-meta">
+                        <div>
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            Fast donor matching
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Local communities first
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <h3>Why it matters</h3>
+                    <p>Blood cannot be manufactured. It must be donated. Together, we can keep hospitals ready.</p>
+                    <div class="hero-card-list">
+                        <div><i class="fa-solid fa-check"></i> Safe and verified donors</div>
+                        <div><i class="fa-solid fa-check"></i> Quick emergency requests</div>
+                        <div><i class="fa-solid fa-check"></i> Community-powered support</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section soft">
+            <div class="container split">
+                <div>
+                    <h2>About Life Stream Donors</h2>
+                    <p>
+                        We are a mission-driven platform focused on connecting people who can donate blood
+                        with people who need it urgently. Our goal is simple: make life-saving blood access
+                        faster, easier, and more human.
+                    </p>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Emergency readiness</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Local</h3>
+                        <p>Community-first matching</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Become a Donor</h2>
+                    <p>Join the donor network. Fill out the form below to get listed.</p>
+                </div>
+                <form id="donorForm" class="card form">
+                    <div class="field">
+                        <label for="donorName">Name</label>
+                        <input id="donorName" name="donorName" type="text" placeholder="Full name" required>
+                    </div>
+                    <div class="field">
+                        <label for="donorBlood">Blood Type</label>
+                        <select id="donorBlood" name="donorBlood" required>
+                            <option value="">Select blood type</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="donorLocation">Location</label>
+                        <input id="donorLocation" name="donorLocation" type="text" placeholder="City or region" required>
+                    </div>
+                    <div class="field">
+                        <label for="donorPhone">Phone Number</label>
+                        <input id="donorPhone" name="donorPhone" type="tel" placeholder="e.g. 555-123-4567" required>
+                    </div>
+                    <button class="btn primary" type="submit">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        Submit Donor Profile
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section id="donors" class="section soft">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Available Donors</h2>
+                    <p>Filter by blood type to find available donors nearby.</p>
+                </div>
+                <div class="filter-row">
+                    <label for="filterBlood">Filter</label>
+                    <select id="filterBlood">
+                        <option value="all">All blood types</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                    </select>
+                    <span id="donorCount" class="badge">0 donors</span>
+                </div>
+                <div id="donorList" class="donor-list"></div>
+            </div>
+        </section>
+
+        <section id="request" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Request Blood</h2>
+                    <p>Let the community know what is needed. We will alert nearby donors.</p>
+                </div>
+                <form id="requestForm" class="card form">
+                    <div class="field">
+                        <label for="patientName">Patient Name</label>
+                        <input id="patientName" name="patientName" type="text" placeholder="Patient full name" required>
+                    </div>
+                    <div class="field">
+                        <label for="requestBlood">Blood Type Needed</label>
+                        <select id="requestBlood" name="requestBlood" required>
+                            <option value="">Select blood type</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="requestUrgency">Urgency</label>
+                        <select id="requestUrgency" name="requestUrgency" required>
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>Critical</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="requestLocation">Location</label>
+                        <input id="requestLocation" name="requestLocation" type="text" placeholder="Hospital or city" required>
+                    </div>
+                    <div class="request-actions">
+                        <button class="btn primary" type="submit">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            Submit Request
+                        </button>
+                        <button class="btn emergency" type="button" id="emergencyRequest">
+                            <i class="fa-solid fa-siren-on"></i>
+                            Emergency Request
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="section soft">
+            <div class="container contact">
+                <div>
+                    <h2>Contact Us</h2>
+                    <p>Have questions or want to partner with us? Reach out any time.</p>
+                </div>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>support@lifestreamdonors.org</span>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Serving local communities</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer class="footer">
+        <div class="container footcontainer">
+            <div class="socials" aria-label="Social links">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+                <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-square-whatsapp" aria-hidden="true"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Life Stream Donors. All rights reserved.</p>
+            <small class="watermark">Malko Labs</small>
+        </div>
+    </footer>
+
+    <script src="scripts/site/main.js" defer></script>
+</body>
+</html>
